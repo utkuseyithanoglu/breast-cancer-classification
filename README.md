@@ -1,26 +1,41 @@
-# breast-cancer-classification
-Breast cancer classification project.
 
-## Project Goal
-This project classifies breast cancer data.
-The goal is to predict cancer type.
+-- Cancer Analysis (KMeans + Logistic Regression)--
+This project works with a cancer dataset and uses two machine learning methods:
+KMeans is used to find groups in the data
+Logistic Regression is used to predict cancer type
 
-## Dataset
-The dataset contains breast cancer data.
-All features are numeric.
 
-## What I Did
-- Loaded the dataset
-- Checked the data
-- Prepared the data
-- Used machine learning models
-- Compared model results
+-- Project Goal --
+Understand the data using KMeans clustering
+Build a model to predict cancer type
+Check the model performance
 
-## Models Used
-- KNN
-- Logistic Regression
-- Naive Bayes
 
-## Results
-- The models can classify cancer data
-- Some models worked better than others
+-- Dataset --
+The dataset is loaded from UCI using ucimlrepo
+Dataset ID: 17
+The data is converted into a Pandas DataFrame
+The features are numeric
+
+
+-- Data Preparation --
+Converted the dataset into a DataFrame
+Scaled the features using:
+StandardScaler
+MinMaxScaler
+Split the data into training and test sets
+Used PCA to reduce dimensions and visualize the data
+
+
+-- Models Used --
+1) KMeans (Unsupervised Learning)
+Applied KMeans clustering
+Used inertia (elbow method) to understand clustering behavior
+2) Logistic Regression (Supervised Learning)
+Trained a Logistic Regression model
+Evaluated the model using:
+Accuracy
+Recall
+F1-score
+Confusion Matrix
+Classification Repor
